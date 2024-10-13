@@ -8,7 +8,7 @@
 
 /* Basic styling */
 body {
-    font-family: 'YourFontFamily', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -26,6 +26,20 @@ p {
 a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header img {
+    width: 100px;
 }
 
 /* Hero section styling */
@@ -49,16 +63,31 @@ a {
 }
 
 /* Article and Images styling */
+article {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: var(--text-color);
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
 article img {
     float: right;
     width: 150px;
     margin: 10px;
 }
 
-article {
-    background-color: rgba(0, 0, 0, 0.1);
+/* Section styling */
+section {
     padding: 20px;
-    color: var(--text-color);
+}
+
+section img {
+    width: 100%;
+    max-width: 150px;
+    margin: 10px;
 }
 
 /* Footer styling */
@@ -72,4 +101,5 @@ footer {
 footer a img {
     width: 30px;
     margin: 0 10px;
+    text-decoration: none;
 }
