@@ -1,6 +1,6 @@
 /* Define color scheme */
 :root {
-    --primary-color: #1a73e8;
+    --primary-color: #9381ff;
     --secondary-color: #ff6f61;
     --background-color: #f4f4f4;
     --text-color: #333;
@@ -15,91 +15,109 @@ body {
     background-color: var(--background-color);
 }
 
-h1, h2 {
-    color: var(--primary-color);
-}
-
-p {
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-/* Header styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     background-color: var(--primary-color);
     color: white;
-}
-
-header img {
-    width: 100px;
-}
-
-/* Hero section styling */
-.hero {
-    position: relative;
+    padding: 20px;
     text-align: center;
 }
 
-.hero img {
+.logo {
+    width: 80px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-img {
     width: 100%;
-    display: block;
+    height: 300px;
+    object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 5px;
 }
 
-/* Article and Images styling */
 article {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    color: var(--text-color);
     position: absolute;
-    top: 80px;
-    left: 20px;
-    width: calc(100% - 40px);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 60%;
+    text-align: left;
+    border-radius: 5px;
 }
 
-article img {
+.article-img {
     float: right;
-    width: 150px;
-    margin: 10px;
+    width: 100px;
+    margin: 0 0 10px 10px;
 }
 
-/* Section styling */
 section {
-    padding: 20px;
-}
-
-section img {
-    width: 100%;
-    max-width: 150px;
-    margin: 10px;
-}
-
-/* Footer styling */
-footer {
+    padding: 40px;
     text-align: center;
-    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.history h2, .adventure h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
     background-color: var(--primary-color);
     color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer a img {
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a img {
     width: 30px;
     margin: 0 10px;
+    vertical-align: middle;
     text-decoration: none;
 }
