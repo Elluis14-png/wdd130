@@ -1,6 +1,3 @@
-/* Preconnect to Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap');
-
 /* Define color scheme */
 :root {
     --primary-color: #1a73e8;
@@ -75,13 +72,7 @@ nav a:hover {
     margin-top: 20px;
 }
 
-<<<<<<< HEAD
 .hero img {
-=======
-.hero-image {
-    display: block;
-    width: 100%;
->>>>>>> 2b8ffdb243b1e9beaa75bfbc12c86879235eb46d
     display: block;
     width: 100%;
 }
