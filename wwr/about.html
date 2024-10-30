@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This page is homework of class fundaments of web and i want to create content of page web">
+    <meta name="description" content="Learn more about White Water Rafting Co., our mission, history, and exciting adventures. Join us for unforgettable rafting experiences.">
     <meta name="author" content="Luis A Ramos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Tour Creel Rafting</title>
+    <title>About Us - White Water Rafting Co.</title>
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -28,15 +28,17 @@
         <div class="hero">
             <img src="images/hero-image.JPG" alt="Rafting Adventure">
             <h1>White Water Rafting</h1>
-            <article> 
+            <div>
                 <img src="images/happy-client.JPG" alt="Happy Client" class="client-img">
                 <p>Our mission is to provide unforgettable adventures while ensuring safety and fun for everyone.</p>
-            </article>
+            </div>
         </div>
+
         <section>
             <h2>History</h2>
             <p>Our rafting company has a rich history of adventure, excitement, and unmatched experiences.</p>
         </section>
+
         <section class="adventures">
             <h2>Adventure Awaits You!</h2>
             <figure>
@@ -63,18 +65,21 @@
     </main>
 
     <footer>
-        <p>© 2024 White Water Rafting | Luis Angel Ramos</p>
+        <p>© <span id="currentYear"></span> White Water Rafting | Luis Angel Ramos</p>
         <nav class="sociallinks">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook-icon.PNG" alt="Facebook">
+                <img src="images/facebook-icon.PNG" alt="Visit our Facebook page">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter-icon.PNG" alt="Twitter">
+                <img src="images/twitter-icon.PNG" alt="Follow us on Twitter">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram-icon.PNG" alt="Instagram">
+                <img src="images/instagram-icon.PNG" alt="Follow us on Instagram">
             </a>
         </nav>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
